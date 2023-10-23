@@ -18,11 +18,11 @@ minimal_mistakes_skin    : "custom" # "default", "air", "aqua", "contrast", "dar
 # Site Settings
 locale                   : "en-US"
 title                    : "Thalia Toha"
-title_separator          : "-" # Useful for SEO
+title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead; Useful for SEO
 name                     : "Thalia Toha"
-description              : "A Small Giants Advocate" # Useful for SEO
-url                      : "https://thaliatoha.github.io" # Change to https://www.thaliatoha.com when setting domain name
+description              : "A small giants advocate" # Useful for SEO
+url                      : "https://www.thaliatoha.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "thaliatoha/thaliatoha.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -106,17 +106,20 @@ analytics:
 # Site Author
 author:
   name             : "Thalia Toha"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A Small Giants Advocate"
+  avatar           : "/assets/images/thalia_avatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "A small giants advocate"
   location         : 
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      #- label: "Website"
+      #   icon: "fas fa-fw fa-link"
+      #  url: "https://thaliatoha.substack.com"
+    - label: "Substack"
+      icon: "fas fa-fw fa-bookmark"
+      url: "https://livingintheus.substack.com/about"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -128,7 +131,7 @@ author:
       # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://www.instagram.com/thaliatoha/"
+      url: "https://www.instagram.com/thaliatoha/"
 
 # Site Footer
 footer:
@@ -148,6 +151,9 @@ footer:
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
+    - label: "Substack"
+      icon: "fas fa-fw fa-bookmark"
+      url: "https://livingintheus.substack.com/about"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/thaliatoha/"
@@ -231,6 +237,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+    #- jekyll-titles-from-headings
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -239,6 +246,12 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+    #- jekyll-titles-from-headings
+
+    #titles_from_headings:
+    #  enabled: true
+    #  strip_title: true
+    #  collections: true
 
 
 # Archives
